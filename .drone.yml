@@ -2,3 +2,12 @@ image: golang:1.5.1
 
 script:
   - go test -v
+
+deploy:
+  cloudfoundry:
+    target: $$TARGET
+    username: $$USERNAME
+    password: $$PASSWORD
+    org: $$ORG
+    space: $$SPACE
+    app: $$APP
