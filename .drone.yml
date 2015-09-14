@@ -11,3 +11,5 @@ deploy:
     org: $$ORG
     space: $$SPACE
     app: $$APP
+    when:
+        branch: master
